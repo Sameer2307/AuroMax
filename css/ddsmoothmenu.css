@@ -1,0 +1,107 @@
+.ddsmoothmenu{
+font: normal 12px Arial, Helvetica, sans-serif;
+width: 100%;
+}
+
+.ddsmoothmenu ul{
+z-index:100;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.ddsmoothmenu ul li{
+position: relative;
+background:url(../images/menu_back.gif) repeat-x top;
+display: inline;
+float: left;
+}
+
+.ddsmoothmenu ul li a{
+display: block;
+padding: 0 14px;
+background:url(../images/menu_devide.gif) no-repeat right top;
+color: #313131;
+text-decoration: none;
+line-height:37px;
+}
+
+* html .ddsmoothmenu ul li a{
+display: inline-block;
+}
+
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited{
+color: #98549c; font-size:12px;
+}
+
+.ddsmoothmenu ul li a:hover{
+color: #711d76;
+}
+
+.ddsmoothmenu ul li a.selected{
+background:url(../images/menu_hover.gif) repeat-x top;
+}
+
+.ddsmoothmenu ul li a:hover{
+background:url(../images/menu_hover.gif) repeat-x top;
+}
+	
+.ddsmoothmenu ul li ul{
+position: absolute;
+left: 0;
+display: none; 
+visibility: hidden;
+background:#55001e;
+}
+
+.ddsmoothmenu ul li ul li{
+display: list-item;
+float: none;
+background:none;
+}
+
+.ddsmoothmenu ul li ul li ul{
+top: 0;
+}
+
+.ddsmoothmenu ul li ul li a{
+font: normal 13px Arial, Helvetica, sans-serif;
+color: #000;
+width: 160px; 
+padding: 6px 4px;
+margin: 0;
+border-top-width: 0;
+border-bottom: 1px solid #320213;
+background:none;
+}
+.ddsmoothmenu ul li ul li a:hover{background:#ffd0ac;color: #000;}
+
+* html .ddsmoothmenu{height: 1%;}
+
+
+
+.downarrowclass{
+position: absolute;
+top: 12px;
+right: 7px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 9px;
+right: 5px;
+}
+
+
+.ddshadow{ 
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 0;
+background: silver;
+}
+
+.toplevelshadow{
+opacity: 0.8;
+}

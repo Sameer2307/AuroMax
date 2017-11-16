@@ -1,0 +1,127 @@
+/* CSS Document */
+
+*
+{
+   margin:0px;
+   padding:0px;
+}
+
+
+h1,h2,h3,h4,h5,h6
+{
+	color:#b2121b;
+	}
+	
+body {
+	background-color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#565555;
+	font-weight:normal;
+	background-image:url(../images/bg.jpg);
+	background-repeat:repeat-x;
+	height:140px;
+	}
+	
+.info a:link{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none; }
+.info a:visited{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none; }
+.info a:active{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none; }
+.info a:hover{font-family:Arial; font-size:12px; color:#cbc607; font-weight:normal; text-decoration:none; }
+
+.info2 a:link{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none;  }
+.info2 a:visited{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none; }
+.info2 a:active{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none; }
+.info2 a:hover{font-family:Arial; font-size:12px; color:#ff8400; font-weight:normal; text-decoration:none;}
+
+.more a:link{font-family:Arial; font-size:11px; color:#bc57c9; font-weight:bold; text-decoration:none;}
+.more a:visited{font-family:Arial; font-size:11px; color:#bc57c9; font-weight:bold; text-decoration:none;}
+.more a:active{font-family:Arial; font-size:11px; color:#bc57c9; font-weight:bold; text-decoration:none;}
+.more a:hover{font-family:Arial; font-size:11px; color:#80288b; font-weight:bold; text-decoration:none;}
+
+.mail a:link{font-family:Arial; font-size:11px; color:#ed5f9d; font-weight:bold; text-decoration:none;}
+.mail a:visited{font-family:Arial; font-size:11px; color:#ed5f9d; font-weight:bold; text-decoration:none;}
+.mail a:active{font-family:Arial; font-size:11px; color:#ed5f9d; font-weight:bold; text-decoration:none;}
+.mail a:hover{font-family:Arial; font-size:11px; color:#e30279; font-weight:bold; text-decoration:none;}
+
+
+.wrapper {
+	width:900px;
+	margin:0 auto;
+	}
+	
+.mailb {
+	color:#450649;
+	font-size:14px;
+	font-weight:bold;
+	}
+	
+.tbba {
+	background-image:url(../images/m2.jpg);
+	background-repeat:no-repeat;
+	height:10px;
+	}
+	
+.tbbb {
+	border-left:1px solid #bdbdbd;
+	border-right:1px solid #bdbdbd;
+	}
+	
+.tbbc {
+	background-image:url(../images/m3.jpg);
+	background-repeat:no-repeat;
+	height:26px;
+	}
+	
+.why {
+	font-size:12px;
+	}
+	
+.ftbg {
+	background-image:url(../images/m13.jpg);
+	background-repeat:repeat-x;
+	height:58px;
+	color:#5f4361;
+	}
+	
+.auro {
+	font-weight:bold;
+	color:#a429ab;
+	}
+	
+.hd {
+	font-size:12px;
+	color:#8600ac;
+	font-weight:bold;
+	}
+	
+.bord {
+	border:1px solid #d9d9d9;
+	padding:6px;
+	}
+	
+.hd2 {
+	font-weight:bold;
+	color:#000000;
+	}
+	
+.hd3 {
+	font-weight:bold;
+	font-size:11px;
+	color:#575757;
+	}
+	
+.fs {
+	font-size:12px;
+	}
+	
+.gapdot {
+	background-image:url(../images/m37.jpg);
+	background-repeat:repeat-y;
+	width:40px;
+	}
+	
+.tbbain {
+	background-image:url(../images/m38.jpg);
+	background-repeat:repeat-x;
+	height:15px;
+	}

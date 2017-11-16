@@ -1,0 +1,39 @@
+/* pagination-edit ...area.....*/
+
+div.pagination-edit {
+padding:5px;
+margin:5px;
+text-align:center;
+clear:both;
+font-size:10px;
+}
+
+div.pagination-edit a {
+padding: 2px 5px 2px 5px;
+margin-right: 2px;
+border: 1px solid #ddd;
+text-decoration: none; 
+color: #990000;
+}
+div.pagination-edit a:hover, div.pagination-edit a:active {
+border:1px solid #990000;
+color: #fff;
+background-color: #990000;
+}
+div.pagination-edit span.current {
+padding: 2px 5px 2px 5px;
+margin-right: 2px;
+border: 1px solid #990000;
+font-weight: bold;
+background-color: #990000;
+color: #FFF;
+}
+div.pagination-edit span.disabled {
+padding: 2px 5px 2px 5px;
+margin-right: 2px;
+border: 1px solid #FFFFFF;
+color: #ccc;
+}
+
+/* pagination-edit end */
+

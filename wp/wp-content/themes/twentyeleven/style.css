@@ -1,0 +1,237 @@
+/* CSS Document */
+
+*
+{
+   margin:0px;
+   padding:0px;
+}
+
+
+h1,h2,h3,h4,h5,h6
+{
+	color:#b2121b;
+	}
+	
+body {
+	background-color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#565555;
+	font-weight:normal;
+	background-image:url(images/bg.jpg);
+	background-repeat:repeat-x;
+	height:140px;
+	}
+	
+.info a:link{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none; }
+.info a:visited{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none; }
+.info a:active{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none; }
+.info a:hover{font-family:Arial; font-size:12px; color:#cbc607; font-weight:normal; text-decoration:none; }
+
+.info2 a:link{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none;  }
+.info2 a:visited{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none; }
+.info2 a:active{font-family:Arial; font-size:12px; color:#fff; font-weight:normal; text-decoration:none; }
+.info2 a:hover{font-family:Arial; font-size:12px; color:#ff8400; font-weight:normal; text-decoration:none;}
+
+.more a:link{font-family:Arial; font-size:11px; color:#bc57c9; font-weight:bold; text-decoration:none;}
+.more a:visited{font-family:Arial; font-size:11px; color:#bc57c9; font-weight:bold; text-decoration:none;}
+.more a:active{font-family:Arial; font-size:11px; color:#bc57c9; font-weight:bold; text-decoration:none;}
+.more a:hover{font-family:Arial; font-size:11px; color:#80288b; font-weight:bold; text-decoration:none;}
+
+.mail a:link{font-family:Arial; font-size:11px; color:#ed5f9d; font-weight:bold; text-decoration:none;}
+.mail a:visited{font-family:Arial; font-size:11px; color:#ed5f9d; font-weight:bold; text-decoration:none;}
+.mail a:active{font-family:Arial; font-size:11px; color:#ed5f9d; font-weight:bold; text-decoration:none;}
+.mail a:hover{font-family:Arial; font-size:11px; color:#e30279; font-weight:bold; text-decoration:none;}
+
+
+.wrapper {
+	width:900px;
+	margin:0 auto;
+	}
+	
+.mailb {
+	color:#450649;
+	font-size:14px;
+	font-weight:bold;
+	}
+	
+.tbba {
+	background-image:url(images/m2.jpg);
+	background-repeat:no-repeat;
+	height:10px;
+	}
+	
+.tbbb {
+	border-left:1px solid #bdbdbd;
+	border-right:1px solid #bdbdbd;
+	}
+	
+.tbbc {
+	background-image:url(images/m3.jpg);
+	background-repeat:no-repeat;
+	height:26px;
+	}
+	
+.why {
+	font-size:12px;
+	}
+	
+.ftbg {
+	background-image:url(images/m13.jpg);
+	background-repeat:repeat-x;
+	height:58px;
+	color:#5f4361;
+	}
+	
+.auro {
+	font-weight:bold;
+	color:#a429ab;
+	}
+	
+.hd {
+	font-size:12px;
+	color:#8600ac;
+	font-weight:bold;
+	}
+	
+.bord {
+	border:1px solid #d9d9d9;
+	padding:6px;
+	}
+	
+.hd2 {
+	font-weight:bold;
+	color:#000000;
+	}
+	
+.hd3 {
+	font-weight:bold;
+	font-size:11px;
+	color:#575757;
+	}
+	
+.fs {
+	font-size:12px;
+	}
+	
+.gapdot {
+	background-image:url(images/m37.jpg);
+	background-repeat:repeat-y;
+	width:40px;
+	}
+	
+.tbbain {
+	background-image:url(images/m38.jpg);
+	background-repeat:repeat-x;
+	height:15px;
+	}
+	
+<!--menu style-->
+
+.ddsmoothmenu{
+font: normal 12px Arial, Helvetica, sans-serif;
+width: 100%;
+}
+
+.ddsmoothmenu ul{
+z-index:100;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.ddsmoothmenu ul li{
+position: relative;
+background:url(../images/menu_back.gif) repeat-x top;
+display: inline;
+float: left;
+}
+
+.ddsmoothmenu ul li a{
+display: block;
+padding: 0 14px;
+background:url(../images/menu_devide.gif) no-repeat right top;
+color: #313131;
+text-decoration: none;
+line-height:37px;
+}
+
+* html .ddsmoothmenu ul li a{
+display: inline-block;
+}
+
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited{
+color: #98549c; font-size:12px;
+}
+
+.ddsmoothmenu ul li a:hover{
+color: #711d76;
+}
+
+.ddsmoothmenu ul li a.selected{
+background:url(../images/menu_hover.gif) repeat-x top;
+}
+
+.ddsmoothmenu ul li a:hover{
+background:url(../images/menu_hover.gif) repeat-x top;
+}
+	
+.ddsmoothmenu ul li ul{
+position: absolute;
+left: 0;
+display: none; 
+visibility: hidden;
+background:#55001e;
+}
+
+.ddsmoothmenu ul li ul li{
+display: list-item;
+float: none;
+background:none;
+}
+
+.ddsmoothmenu ul li ul li ul{
+top: 0;
+}
+
+.ddsmoothmenu ul li ul li a{
+font: normal 13px Arial, Helvetica, sans-serif;
+color: #000;
+width: 160px; 
+padding: 6px 4px;
+margin: 0;
+border-top-width: 0;
+border-bottom: 1px solid #320213;
+background:none;
+}
+.ddsmoothmenu ul li ul li a:hover{background:#ffd0ac;color: #000;}
+
+* html .ddsmoothmenu{height: 1%;}
+
+
+
+.downarrowclass{
+position: absolute;
+top: 12px;
+right: 7px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 9px;
+right: 5px;
+}
+
+
+.ddshadow{ 
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 0;
+background: silver;
+}
+
+.toplevelshadow{
+opacity: 0.8;
+}

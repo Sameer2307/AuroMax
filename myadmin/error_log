@@ -1,0 +1,5 @@
+[25-Jan-2012 02:51:54] PHP Warning:  include(admin/my_account_ship.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/hartline/public_html/myadmin/body_admin.php on line 61
+[25-Jan-2012 02:51:54] PHP Warning:  include(admin/my_account_ship.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/hartline/public_html/myadmin/body_admin.php on line 61
+[25-Jan-2012 02:51:54] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'admin/my_account_ship.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/hartline/public_html/myadmin/body_admin.php on line 61
+[25-Jan-2012 03:39:05] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/hartline/public_html/myadmin/admin/show_detail_transaction.php on line 38
+[25-Jan-2012 03:39:05] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/hartline/public_html/myadmin/admin/show_detail_transaction.php on line 38

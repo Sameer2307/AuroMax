@@ -1,0 +1,252 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.9.6
+-- http://www.phpmyadmin.net
+--
+-- Host: mysql
+-- Generation Time: Apr 17, 2013 at 11:31 PM
+-- Server version: 4.1.14
+-- PHP Version: 5.2.12
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `regalguesthouse`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin_login`
+--
+
+CREATE TABLE IF NOT EXISTS `admin_login` (
+  `id` int(5) NOT NULL auto_increment,
+  `user_name` varchar(215) NOT NULL default '',
+  `pass_word` varchar(100) NOT NULL default '',
+  `LOGINTYPE` varchar(30) default NULL,
+  `LOGINNAME` varchar(80) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `admin_login`
+--
+
+INSERT INTO `admin_login` (`id`, `user_name`, `pass_word`, `LOGINTYPE`, `LOGINNAME`) VALUES
+(1, 'admin', 'admin', NULL, 'admin');
+
+
+-- phpMyAdmin SQL Dump
+-- version 2.11.9.6
+-- http://www.phpmyadmin.net
+--
+-- Host: mysql
+-- Generation Time: Apr 17, 2013 at 11:32 PM
+-- Server version: 4.1.14
+-- PHP Version: 5.2.12
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `regalguesthouse`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_gallery`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_gallery` (
+  `id` int(11) NOT NULL auto_increment,
+  `video_type` varchar(100) NOT NULL default '',
+  `category` varchar(50) NOT NULL default '',
+  `category_id` int(11) NOT NULL default '0',
+  `pic_path` varchar(200) NOT NULL default '',
+  `video_path` varchar(200) NOT NULL default '',
+  `video_status` varchar(50) NOT NULL default '',
+  `row_status` varchar(30) NOT NULL default '',
+  `homeshow` varchar(10) NOT NULL default 'NO',
+  `video_desc` varchar(200) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=252 ;
+
+--
+-- Dumping data for table `tbl_gallery`
+--
+
+INSERT INTO `tbl_gallery` (`id`, `video_type`, `category`, `category_id`, `pic_path`, `video_path`, `video_status`, `row_status`, `homeshow`, `video_desc`) VALUES
+(78, 'GALLERY', 'HOTEL', 0, 'gallery1_78_DSC_0452small.jpg', 'gallery2_78_DSC_0452regal_big.jpg', 'HOTEL', 'ACTIVE', '', '												'),
+(79, 'GALLERY', 'HOTEL', 0, 'gallery1_79_DSC_0455small.jpg', 'gallery2_79_DSC_0455_big.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(80, 'GALLERY', 'HOTEL', 0, 'gallery1_80_DSC_0456small.jpg', 'gallery2_80_DSC_0456_big.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(81, 'GALLERY', 'HOTEL', 0, 'gallery1_81_DSC_0458small.jpg', 'gallery2_81_DSC_0458_big.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(83, 'GALLERY', 'HOTEL', 0, 'gallery1_83_DSC_0460b_big.jpg', 'gallery2_83_DSC_0460small.jpg', 'HOTEL', '', '', '						'),
+(84, 'GALLERY', 'HOTEL', 0, 'gallery1_84_DSC_0470asmall.jpg', 'gallery2_84_DSC_0470a_big.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(85, 'GALLERY', 'HOTEL', 0, 'gallery1_85_DSC_0466small.jpg', 'gallery2_85_DSC_0466big.jpg', 'HOTEL', 'ACTIVE', '', '																		'),
+(86, 'GALLERY', 'HOTEL', 0, 'gallery1_86_DSC_0548small.jpg', 'gallery2_86_DSC_0548big.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(87, 'GALLERY', 'HOTEL', 0, 'gallery1_87_DSC_0543small.jpg', 'gallery2_87_DSC_0543big.jpg', 'HOTEL', 'ACTIVE', 'Royal Exec', '												'),
+(88, 'GALLERY', 'HOTEL', 0, 'gallery1_88_DSC_0486-gardenrestaurentsmall.jpg', 'gallery2_88_DSC_0486gardenrestaurentbig.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(89, 'GALLERY', 'HOTEL', 0, 'gallery1_89_DSC_0487small.jpg', 'gallery2_89_DSC_0487big.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(90, 'GALLERY', 'HOTEL', 0, 'gallery1_90_DSC_0488small.jpg', 'gallery2_90_DSC_0488big.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(91, 'GALLERY', 'HOTEL', 0, 'gallery1_91_DSC_0489aPicnicspotsmall.jpg', 'gallery2_91_DSC_0489a-Picnicspotbig.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(92, 'GALLERY', 'HOTEL', 0, 'gallery1_92_DSC_0489bpicnicspotsmall.jpg', 'gallery2_92_DSC_0489b-picnicspotbig.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(93, 'GALLERY', 'HOTEL', 0, 'gallery1_93_DSC_0523small.jpg', 'gallery2_93_DSC_0523big.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(94, 'GALLERY', 'HOTEL', 0, 'gallery1_94_DSC_0524small.jpg', 'gallery2_94_DSC_0524big.jpg', 'HOTEL', 'ACTIVE', '', '						'),
+(98, 'GALLERY', 'GHOUSE', 0, 'gallery1_98_guest3_s.jpg', 'gallery2_98_guest3_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(99, 'GALLERY', 'GHOUSE', 0, 'gallery1_99_guest4_s.jpg', 'gallery2_99_guest4_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(103, 'GALLERY', 'GHOUSE', 0, 'gallery1_103_guest8_s.jpg', 'gallery2_103_guest8_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(104, 'GALLERY', 'GHOUSE', 0, 'gallery1_104_chandrabindoo1_s.jpg', 'gallery2_104_chandrabindoo1_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(106, 'GALLERY', 'GHOUSE', 0, 'gallery1_106_guest10_s.jpg', 'gallery2_106_guest10_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(113, 'GALLERY', 'GHOUSE', 0, 'gallery1_113_guest17_s.jpg', 'gallery2_113_guest17_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(116, 'GALLERY', 'GHOUSE', 0, 'gallery1_116_guest23_s.jpg', 'gallery2_116_guest23_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(124, 'GALLERY', 'GHOUSE', 0, 'gallery1_124_guest32_s.jpg', 'gallery2_124_guest32_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(126, 'GALLERY', 'GHOUSE', 0, 'gallery1_126_guest34_s.jpg', 'gallery2_126_guest34_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(127, 'GALLERY', 'GHOUSE', 0, 'gallery1_127_guest35_s.jpg', 'gallery2_127_guest35_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(128, 'GALLERY', 'GHOUSE', 0, 'gallery1_128_guest36_s.jpg', 'gallery2_128_guest36_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(130, 'GALLERY', 'GHOUSE', 0, 'gallery1_130_guest38_s.jpg', 'gallery2_130_guest38_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(133, 'GALLERY', 'GHOUSE', 0, 'gallery1_133_guest41_s.jpg', 'gallery2_133_guest41_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(134, 'GALLERY', 'GHOUSE', 0, 'gallery1_134_guest42_s.jpg', 'gallery2_134_guest42_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(136, 'GALLERY', 'GHOUSE', 0, 'gallery1_136_guest44_s.jpg', 'gallery2_136_guest44_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(137, 'GALLERY', 'GHOUSE', 0, 'gallery1_137_guest45_s.jpg', 'gallery2_137_guest45_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(138, 'GALLERY', 'GHOUSE', 0, 'gallery1_138_guest46_s.jpg', 'gallery2_138_guest46_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(141, 'GALLERY', 'GHOUSE', 0, 'gallery1_141_guest50_s.jpg', 'gallery2_141_guest50_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(144, 'GALLERY', 'GHOUSE', 0, 'gallery1_144_guest54_s.jpg', 'gallery2_144_guest54_m.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(148, 'GALLERY', 'GHOUSE', 0, 'gallery1_148_8.jpg', 'gallery2_148_Abhisekh.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(146, 'GALLERY', 'GHOUSE', 0, 'gallery1_146_guest56_s.jpg', 'gallery2_146_guest56_m.jpg', 'GHOUSE', 'ACTIVE', '', '												'),
+(150, 'GALLERY', 'GHOUSE', 0, 'gallery1_150_3.jpg', 'gallery2_150_Anup-Zalota.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(151, 'GALLERY', 'GHOUSE', 0, 'gallery1_151_4.jpg', 'gallery2_151_Anjan.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(152, 'GALLERY', 'GHOUSE', 0, 'gallery1_152_5.jpg', 'gallery2_152_Anindya.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(153, 'GALLERY', 'GHOUSE', 0, 'gallery1_153_6.jpg', 'gallery2_153_Amit-kumar-2.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(154, 'GALLERY', 'GHOUSE', 0, 'gallery1_154_7.jpg', 'gallery2_154_Amal-Dutta.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(155, 'GALLERY', 'GHOUSE', 0, 'gallery1_155_9.jpg', 'gallery2_155_Bumba-5.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(156, 'GALLERY', 'GHOUSE', 0, 'gallery1_156_10.jpg', 'gallery2_156_Bumba-4.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(157, 'GALLERY', 'GHOUSE', 0, 'gallery1_157_11.jpg', 'gallery2_157_Bumba-3.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(158, 'GALLERY', 'GHOUSE', 0, 'gallery1_158_12.jpg', 'gallery2_158_Bumba-2.jpg', 'GHOUSE', 'ACTIVE', '', '												'),
+(159, 'GALLERY', 'GHOUSE', 0, 'gallery1_159_13.jpg', 'gallery2_159_Bumba-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(160, 'GALLERY', 'GHOUSE', 0, 'gallery1_160_14.jpg', 'gallery2_160_Bratati-2.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(161, 'GALLERY', 'GHOUSE', 0, 'gallery1_161_15.jpg', 'gallery2_161_biplab.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(162, 'GALLERY', 'GHOUSE', 0, 'gallery1_162_16.jpg', 'gallery2_162_Bikas-pAnji.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(163, 'GALLERY', 'GHOUSE', 0, 'gallery1_163_17.jpg', 'gallery2_163_Bhaskar.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(164, 'GALLERY', 'GHOUSE', 0, 'gallery1_164_18.jpg', 'gallery2_164_Conybio.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(165, 'GALLERY', 'GHOUSE', 0, 'gallery1_165_19.jpg', 'gallery2_165_Dona-2.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(166, 'GALLERY', 'GHOUSE', 0, 'gallery1_166_20.jpg', 'gallery2_166_Dona-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(167, 'GALLERY', 'GHOUSE', 0, 'gallery1_167_21.jpg', 'gallery2_167_Debashree.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(168, 'GALLERY', 'GHOUSE', 0, 'gallery1_168_22.jpg', 'gallery2_168_Chiranjeet-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(169, 'GALLERY', 'GHOUSE', 0, 'gallery1_169_23.jpg', 'gallery2_169_Chinmoy.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(172, 'GALLERY', 'GHOUSE', 0, 'gallery1_172_26.jpg', 'gallery2_172_Bumba-6.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(176, 'GALLERY', 'GHOUSE', 0, 'gallery1_176_29.jpg', 'gallery2_176_DSC00481.jpg', 'GHOUSE', 'ACTIVE', '', '												'),
+(178, 'GALLERY', 'GHOUSE', 0, 'gallery1_178_31.jpg', 'gallery2_178_DSC00550.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(179, 'GALLERY', 'GHOUSE', 0, 'gallery1_179_32.jpg', 'gallery2_179_DSC00544.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(180, 'GALLERY', 'GHOUSE', 0, 'gallery1_180_33.jpg', 'gallery2_180_DSC00543.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(181, 'GALLERY', 'GHOUSE', 0, 'gallery1_181_34.jpg', 'gallery2_181_DSC00535.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(182, 'GALLERY', 'GHOUSE', 0, 'gallery1_182_35.jpg', 'gallery2_182_DSC00520.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(183, 'GALLERY', 'GHOUSE', 0, 'gallery1_183_36.jpg', 'gallery2_183_DSC00573.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(184, 'GALLERY', 'GHOUSE', 0, 'gallery1_184_37.jpg', 'gallery2_184_DSCN2602.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(185, 'GALLERY', 'GHOUSE', 0, 'gallery1_185_38.jpg', 'gallery2_185_DSCN2603.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(186, 'GALLERY', 'GHOUSE', 0, 'gallery1_186_39.jpg', 'gallery2_186_DSCN2790.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(187, 'GALLERY', 'GHOUSE', 0, 'gallery1_187_40.jpg', 'gallery2_187_DSCN2847.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(188, 'GALLERY', 'GHOUSE', 0, 'gallery1_188_41.jpg', 'gallery2_188_DSCN2849.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(191, 'GALLERY', 'GHOUSE', 0, 'gallery1_191_44.jpg', 'gallery2_191_IMG_0001.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(193, 'GALLERY', 'GHOUSE', 0, 'gallery1_193_47.jpg', 'gallery2_193_DSCN4234.jpg', 'GHOUSE', 'ACTIVE', '', '																		'),
+(204, 'GALLERY', 'GHOUSE', 0, 'gallery1_204_57.jpg', 'gallery2_204_Jishu-Kanchan.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(203, 'GALLERY', 'GHOUSE', 0, 'gallery1_203_56.jpg', 'gallery2_203_Jeet-4.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(202, 'GALLERY', 'GHOUSE', 0, 'gallery1_202_55.jpg', 'gallery2_202_Haranath-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(197, 'GALLERY', 'GHOUSE', 0, 'gallery1_197_51.jpg', 'gallery2_197_Indrani-Dutta.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(200, 'GALLERY', 'GHOUSE', 0, 'gallery1_200_53.jpg', 'gallery2_200_Jeet.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(201, 'GALLERY', 'GHOUSE', 0, 'gallery1_201_54.jpg', 'gallery2_201_Indrani-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(205, 'GALLERY', 'GHOUSE', 0, 'gallery1_205_58.jpg', 'gallery2_205_Joy-Banerjee.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(206, 'GALLERY', 'GHOUSE', 0, 'gallery1_206_59.jpg', 'gallery2_206_Firdous.jpg', 'GHOUSE', 'ACTIVE', '', '												'),
+(207, 'GALLERY', 'GHOUSE', 0, 'gallery1_207_60.jpg', 'gallery2_207_DSCN2878.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(208, 'GALLERY', 'GHOUSE', 0, 'gallery1_208_61.jpg', 'gallery2_208_Haradhan-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(210, 'GALLERY', 'GHOUSE', 0, 'gallery1_210_63.jpg', 'gallery2_210_Satabdi-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(250, 'GALLERY', 'GHOUSE', 0, 'gallery1_250_78.jpg', 'gallery2_250_Krishanu-Dey.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(212, 'GALLERY', 'GHOUSE', 0, 'gallery1_212_65.jpg', 'gallery2_212_Sadhana-Sargam-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(213, 'GALLERY', 'GHOUSE', 0, 'gallery1_213_66.jpg', 'gallery2_213_Sabyaschi-2.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(214, 'GALLERY', 'GHOUSE', 0, 'gallery1_214_67.jpg', 'gallery2_214_Sabyaschi-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(215, 'GALLERY', 'GHOUSE', 0, 'gallery1_215_68.jpg', 'gallery2_215_Rituparna-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(216, 'GALLERY', 'GHOUSE', 0, 'gallery1_216_69.jpg', 'gallery2_216_Ranjit-Mallik.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(217, 'GALLERY', 'GHOUSE', 0, 'gallery1_217_70.jpg', 'gallery2_217_Raja-3.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(218, 'GALLERY', 'GHOUSE', 0, 'gallery1_218_71.jpg', 'gallery2_218_Pallabi.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(219, 'GALLERY', 'GHOUSE', 0, 'gallery1_219_72.jpg', 'gallery2_219_P.C-Sarkar.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(249, 'GALLERY', 'GHOUSE', 0, 'gallery1_249_73.jpg', 'gallery2_249_md.Aziz.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(221, 'GALLERY', 'GHOUSE', 0, 'gallery1_221_74.jpg', 'gallery2_221_Manoj-Mitra-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(222, 'GALLERY', 'GHOUSE', 0, 'gallery1_222_75.jpg', 'gallery2_222_Manna-Dey-4.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(223, 'GALLERY', 'GHOUSE', 0, 'gallery1_223_76.jpg', 'gallery2_223_Manna-Dey-3.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(224, 'GALLERY', 'GHOUSE', 0, 'gallery1_224_77.jpg', 'gallery2_224_Laboni-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(225, 'GALLERY', 'GHOUSE', 0, 'gallery1_225_78.jpg', 'gallery2_225_Krishanu-Dey.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(226, 'GALLERY', 'GHOUSE', 0, 'gallery1_226_79.jpg', 'gallery2_226_Koyel-2.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(227, 'GALLERY', 'GHOUSE', 0, 'gallery1_227_80.jpg', 'gallery2_227_Kavita-Krishanamurthy.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(228, 'GALLERY', 'GHOUSE', 0, 'gallery1_228_81.jpg', 'gallery2_228_Subhas.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(229, 'GALLERY', 'GHOUSE', 0, 'gallery1_229_82.jpg', 'gallery2_229_Subhas-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(230, 'GALLERY', 'GHOUSE', 0, 'gallery1_230_83.jpg', 'gallery2_230_Sryea-1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(231, 'GALLERY', 'GHOUSE', 0, 'gallery1_231_84.jpg', 'gallery2_231_Srikanto-2.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(232, 'GALLERY', 'GHOUSE', 0, 'gallery1_232_85.jpg', 'gallery2_232_soumitra.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(233, 'GALLERY', 'GHOUSE', 0, 'gallery1_233_86.jpg', 'gallery2_233_Soham-Bittu.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(251, 'GALLERY', 'GHOUSE', 0, 'gallery1_251_87.jpg', 'gallery2_251_Shankar1.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(235, 'GALLERY', 'GHOUSE', 0, 'gallery1_235_88.jpg', 'gallery2_235_Shakti-.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(236, 'GALLERY', 'GHOUSE', 0, 'gallery1_236_89.jpg', 'gallery2_236_Sayantani.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(237, 'GALLERY', 'GHOUSE', 0, 'gallery1_237_90.jpg', 'gallery2_237_Swastika-4.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(241, 'GALLERY', 'GHOUSE', 0, 'gallery1_241_92.jpg', 'gallery2_241_Suvasish3.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(244, 'GALLERY', 'GHOUSE', 0, 'gallery1_244_94.jpg', 'gallery2_244_Sunil-Ganguly.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(243, 'GALLERY', 'GHOUSE', 0, 'gallery1_243_93.jpg', 'gallery2_243_tapas-pal2.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(246, 'GALLERY', 'GHOUSE', 0, 'gallery1_246_96.jpg', 'gallery2_246_Vinod-Rathod.jpg', 'GHOUSE', 'ACTIVE', '', '						'),
+(247, 'GALLERY', 'GHOUSE', 0, 'gallery1_247_97.jpg', 'gallery2_247_Ushashi-3.jpg', 'GHOUSE', 'ACTIVE', '', '												'),
+(248, 'GALLERY', 'GHOUSE', 0, 'gallery1_248_52.jpg', 'gallery2_248_Jeet-2.jpg', 'GHOUSE', 'ACTIVE', '', '						');
+
+
+
+
+
+
+-- phpMyAdmin SQL Dump
+-- version 2.11.9.6
+-- http://www.phpmyadmin.net
+--
+-- Host: mysql
+-- Generation Time: Apr 17, 2013 at 11:32 PM
+-- Server version: 4.1.14
+-- PHP Version: 5.2.12
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `regalguesthouse`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news`
+--
+
+CREATE TABLE IF NOT EXISTS `news` (
+  `nid` int(10) NOT NULL auto_increment,
+  `title` varchar(255) NOT NULL default '',
+  `descri` varchar(255) default NULL,
+  `postdate` varchar(20) default NULL,
+  `news_Edit` varchar(255) NOT NULL default '',
+  `news_pub` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`nid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=54 ;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`nid`, `title`, `descri`, `postdate`, `news_Edit`, `news_pub`) VALUES
+(51, 'Special Offer', 'Enjoy your christmas and new year with your family and freinds in our resort with very low price.											', '14/12/2011', 'Picnic offer																	', ''),
+(53, '31 st Dhamaka', '      Enjoy your  31st Dec evening at our Auditorium with DJ, Western Dance, Rocking Singers and much more........starting 8 p.m onwards. Passes available from our resort.', '20/12/2011', '      ROCK THE DANCE FLOOR', '');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
